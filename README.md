@@ -1,40 +1,5 @@
 # SEL0433 — Projeto 3: Controle PWM e Comunicação
 
-Código-fonte completo para as **Parte 1** e **Parte 2** do projeto, pronto para simulação no **Wokwi** (ESP32 DevKit).
-
-## Estrutura do repositório
-
-```
-projeto3_SEL0433/
-├── parte1_pwm_rgb/                     -> Parte 1 (obrigatório)
-│   ├── parte1_pwm_rgb.ino
-│   ├── diagram.json                    -> circuito pronto para importar no Wokwi
-│   └── libraries.txt
-│
-├── parte1_bonus_ble/                   -> Parte 1, desafio (opcional)
-│   ├── parte1_bonus_ble.ino
-│   └── libraries.txt
-│
-├── parte2_ex1_servo_potenciometro/     -> Parte 2, exercício 1 (obrigatório)
-│   ├── parte2_ex1_servo_potenciometro.ino
-│   ├── diagram.json
-│   └── libraries.txt
-│
-└── parte2_ex2_mcpwm_motor/             -> Parte 2, exercício 2 (obrigatório)
-    ├── parte2_ex2_mcpwm_motor.ino
-    ├── diagram.json
-    └── libraries.txt
-```
-
-## Como testar no Wokwi
-
-1. Acesse [wokwi.com](https://wokwi.com/) e crie um novo projeto **ESP32**.
-2. Cole o conteúdo do `.ino` correspondente no editor de código (`sketch.ino`).
-3. Abra a aba de bibliotecas do projeto e adicione as bibliotecas listadas no `libraries.txt` da pasta (quando houver) pelo nome exato, via Library Manager do Wokwi.
-4. Para o circuito: você pode montar manualmente arrastando as peças conforme a tabela de ligações de cada pasta, **ou** colar o conteúdo do `diagram.json` incluso na aba "diagram.json" do projeto Wokwi.
-   > **Atenção:** os `diagram.json` foram escritos manualmente como ponto de partida. Confira as ligações na tela do simulador antes de rodar — pode ser necessário reposicionar peças ou ajustar algum nome de pino, já que a nomenclatura exata de cada peça pode variar entre versões do Wokwi.
-5. Abra o Monitor Serial a **115200 baud** e clique em ▶️ (play) para simular.
-
 ## Parte 1 — PWM do LED RGB (LEDC)
 
 | Requisito do enunciado | Como foi atendido |
@@ -70,6 +35,9 @@ Recursos adicionais incorporados (além do PWM, conforme pedido no enunciado):
 > O catálogo padrão do Wokwi não tem uma ponte H pronta, então o `diagram.json` dessa pasta usa dois LEDs indicadores (IN1/IN2) para visualizar o sinal MCPWM (o brilho de cada LED acompanha o duty cycle/velocidade). Em uma montagem física real, IN1/IN2 vão para os pinos de entrada de uma ponte H de verdade (L298N, TB6612, DRV8833 etc.), que aciona o motor.
 
 **Diferencial sugerido (não implementado neste código, mas fácil de agregar):** adicionar BLE ou Wi-Fi para enviar comandos remotos de velocidade/sentido, reaproveitando o mesmo padrão de comandos por texto usado no desafio da Parte 1 (`parte1_bonus_ble`).
+
+-- Giovanne Tomaszewski Grecco
+-- 16228852
 
 ## Observação sobre versões do core arduino-esp32
 
