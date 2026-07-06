@@ -36,11 +36,6 @@ Recursos adicionais incorporados (além do PWM, conforme pedido no enunciado):
 
 > O catálogo padrão do Wokwi não tem uma ponte H pronta, então o `diagram.json` dessa pasta usa dois LEDs indicadores (IN1/IN2) para visualizar o sinal MCPWM (o brilho de cada LED acompanha o duty cycle/velocidade). Em uma montagem física real, IN1/IN2 vão para os pinos de entrada de uma ponte H de verdade (L298N, TB6612, DRV8833 etc.), que aciona o motor.
 
-**Diferencial sugerido (não implementado neste código, mas fácil de agregar):** adicionar BLE ou Wi-Fi para enviar comandos remotos de velocidade/sentido, reaproveitando o mesmo padrão de comandos por texto usado no desafio da Parte 1 (`parte1_bonus_ble`).
 
 -- Giovanne Tomaszewski Grecco
 -- 16228852
-
-## Observação sobre versões do core arduino-esp32
-
-O código usa a API "clássica" do LEDC (`ledcSetup` + `ledcAttachPin` + `ledcWrite(canal, duty)`), compatível com o core arduino-esp32 **2.x** (o mais comum no Wokwi). Se você estiver usando o core **3.x** (onde essas funções foram descontinuadas), troque pelas chamadas equivalentes `ledcAttach(pino, freq, resolucao)` e `ledcWrite(pino, duty)` — há um comentário indicando isso diretamente no arquivo `parte1_pwm_rgb.ino`.
