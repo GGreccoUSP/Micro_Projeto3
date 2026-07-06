@@ -1,8 +1,6 @@
 # SEL0433 — Projeto 3: Controle PWM e Comunicação
 
--- Giovanne Tomaszewski Grecco
-
--- 16228852
+-- Giovanne Tomaszewski Grecco - 16228852
 
 
 O projeto foi desenvolvido e testado na plataforma Wokwi. Ele implementa, em C++ o funcionamento de 3 exemplos diferentes: degradê de um LED, Controle PWM de servomotor via potenciômetro, e por fim, um Controlador de velocidade e sentido de rotação de um motor DC.
