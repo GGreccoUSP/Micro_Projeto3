@@ -15,7 +15,7 @@ O projeto foi desenvolvido e testado na plataforma Wokwi. Ele implementa, em C++
 
 **Ligações:** R → resistor 220 Ω → GPIO 25 · G → resistor 220 Ω → GPIO 26 · B → resistor 220 Ω → GPIO 27 · Catodo comum → GND
 
-A montagem do circuito da parte 1 na plataforma WOKWI está mostrada abaixo:
+Montagem do circuito da parte 1 na plataforma WOKWI:
 <img width="681" height="680" alt="simulacao_3_1" src="https://github.com/user-attachments/assets/2491eb30-c4db-4e6d-875d-84d4e5d96225" />
 
 ## Parte 2 — Exercício 1: Servo + Potenciômetro
@@ -24,7 +24,7 @@ Usa a biblioteca **ESP32Servo**. O potenciômetro é lido pelo ADC (GPIO 34, 12 
 
 **Ligações:** Potenciômetro → VCC/GND/SIG(GPIO 34) · Servo → V+ (5V) / GND / sinal (GPIO 18)
 
-A montagem do circuito da parte 2 ex 1 na plataforma WOKWI está mostrada abaixo:
+Montagem do circuito da parte 2 ex 1 na plataforma WOKWI:
 <img width="713" height="716" alt="simulacao_final_2" src="https://github.com/user-attachments/assets/c88f7b3a-d39d-473a-8305-0d32c8a4a2f4" />
 
 ## Parte 2 — Exercício 2: Motor DC com MCPWM (aplicação proposta pelo grupo)
@@ -42,7 +42,7 @@ Recursos adicionais incorporados (além do PWM, conforme pedido no enunciado):
 
 > O catálogo padrão do Wokwi não tem uma ponte H pronta, então o `diagram.json` dessa pasta usa dois LEDs indicadores (IN1/IN2) para visualizar o sinal MCPWM (o brilho de cada LED acompanha o duty cycle/velocidade). Em uma montagem física real, IN1/IN2 vão para os pinos de entrada de uma ponte H de verdade (L298N, TB6612, DRV8833 etc.), que aciona o motor.
 
-A montagem do circuito da parte 2 ex 2 na plataforma WOKWI está mostrada abaixo:
+Montagem do circuito da parte 2 ex 2 na plataforma WOKWI:
 <img width="739" height="751" alt="simulacao_final3" src="https://github.com/user-attachments/assets/7c322956-950a-4fee-b88d-9f98fde8ba77" />
 
 -- Giovanne Tomaszewski Grecco
