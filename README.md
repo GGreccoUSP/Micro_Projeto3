@@ -1,5 +1,10 @@
 # SEL0433 — Projeto 3: Controle PWM e Comunicação
 
+-- Giovanne Tomaszewski Grecco
+
+-- 16228852
+
+
 O projeto foi desenvolvido e testado na plataforma Wokwi. Ele implementa, em C++ o funcionamento de 3 exemplos diferentes: degradê de um LED, Controle PWM de servomotor via potenciômetro, e por fim, um Controlador de velocidade e sentido de rotação de um motor DC.
 
 ## Parte 1 — PWM do LED RGB (LEDC)
@@ -44,6 +49,3 @@ Recursos adicionais incorporados (além do PWM, conforme pedido no enunciado):
 
 Montagem do circuito da parte 2 ex 2 na plataforma WOKWI:
 <img width="739" height="751" alt="simulacao_final3" src="https://github.com/user-attachments/assets/7c322956-950a-4fee-b88d-9f98fde8ba77" />
-
--- Giovanne Tomaszewski Grecco
--- 16228852
