@@ -1,5 +1,0 @@
-Adafruit SSD1306
-Adafruit GFX Library
-
-(driver/mcpwm.h e Wire.h já fazem parte do core arduino-esp32, não precisam
-ser adicionadas separadamente)
